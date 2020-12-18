@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="Hai" class="com.bean.Parent">
+		<property name="a" value="22"></property>
+		<property name="aa" value="77"></property>
+	</bean>
+	<bean id="two" class="com.bean.Parent1">
+		
+		
+		<property name="b" value="11111"></property>
+	</bean>
+</beans>

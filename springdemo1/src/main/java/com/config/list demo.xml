@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+<bean id="ld" class="com.bean.ListDemo">
+	<property name="id" value="8"></property>
+	<property name="fname" value="hhhhh"></property>
+	<property name="lname" value="rrr"></property>
+	<property name="addressess">
+	<list>
+	<ref bean="address1" />
+	<ref bean="address2" />
+	<ref bean="address3" />
+	</list>
+	</property>
+	</bean>
+		<bean id= "address1" class="com.bean.Address">
+	<property name="doorNo" value="8"></property>
+	<property name="city" value="tup"></property>
+	<property name="state" value="tn"></property>
+	</bean>
+	<bean id= "address2" class="com.bean.Address">
+	<property name="doorNo" value="9"></property>
+	<property name="city" value="cbe"></property>
+	<property name="state" value="ap"></property>
+	</bean>
+	<bean id= "address3" class="com.bean.Address">
+	<property name="doorNo" value="10"></property>
+	<property name="city" value="mad"></property>
+	<property name="state" value="mp"></property>
+	</bean>
+	</beans>
